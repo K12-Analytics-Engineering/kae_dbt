@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kae-dbt"
-version = "0.3.0"
+version = "0.3.1"
 description = "KAE utilities for dbt"
 authors = ["Marcos Alcozer <marcos@alcozer.dev>", "Zander Stachniak <zander@alcozer.dev>"]
 readme = "README.md"
