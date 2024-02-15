@@ -1,7 +1,12 @@
-{% macro calculate_age(date_of_birth) %}
-    if(
-        extract(dayofyear from current_date) < extract(dayofyear from date_of_birth),
-        date_diff(current_date, date_of_birth, year) - 1,
-        date_diff(current_date, date_of_birth, year)
+{% macro calculate_age(dob) %}
+    (
+        date_diff(current_date('America/Chicago'), {{ dob }}, year) - 
+        if(
+            (
+                extract(month from {{ dob }}) * 100 + extract(day from {{ dob }}) > 
+                extract(month from current_date('America/Chicago')) * 100 + extract(day from current_date('America/Chicago'))
+            ),
+            1, 0
+        )
     )
 {% endmacro %}
