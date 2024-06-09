@@ -371,13 +371,13 @@ google-cloud-storage = ">=2.4,<3.0"
 
 [[package]]
 name = "dbt-core"
-version = "1.6.13"
+version = "1.6.16"
 description = "With dbt, data analysts and engineers can build analytics the way engineers build applications."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "dbt_core-1.6.13-py3-none-any.whl", hash = "sha256:e6741b4f0500541e768e54bcd17249453f832710b6256ed045fb53d63f3205e5"},
-    {file = "dbt_core-1.6.13.tar.gz", hash = "sha256:b4a3e1cf5dcb48c6300c9e084b2b2bb152f8869e14ac3506775f68cd69ac7650"},
+    {file = "dbt_core-1.6.16-py3-none-any.whl", hash = "sha256:a5dff68b742b0fc5c01dfa3edf0f35706b241369b43f82d527609e3a5acadf5b"},
+    {file = "dbt_core-1.6.16.tar.gz", hash = "sha256:69b1c552c2458938ee749a8e5e4a29bf069d7deff1d28a068fb569381c7eb737"},
 ]
 
 [package.dependencies]
@@ -2294,4 +2294,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9.10"
-content-hash = "c82b8bce258e0b345d8aedf729f049f70c3575a47fe776219e223a5b7beb804d"
+content-hash = "1f110a95d77401f6228aba11594bdfb42787eb08231369bdfea04ad21306c7e0"
