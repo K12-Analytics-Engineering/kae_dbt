@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kae-dbt"
-version = "0.4.1"
+version = "0.4.8"
 description = "KAE utilities for dbt"
 authors = ["Marcos Alcozer <marcos@alcozer.dev>", "Zander Stachniak <zander@alcozer.dev>"]
 readme = "README.md"
@@ -8,8 +8,7 @@ packages = [{include = "kae_dbt"}]
 
 [tool.poetry.dependencies]
 python = "~3.12"
-dbt-bigquery = "~1.6"
-dbt-core = "~1.6"
+dbt-bigquery = "~1.7"
 
 [tool.poetry.group.dev.dependencies]
 sqlfluff = "~3.1"
