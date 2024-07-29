@@ -8,7 +8,7 @@ packages = [{include = "kae_dbt"}]
 
 [tool.poetry.dependencies]
 python = "~3.12"
-dbt-bigquery = "~1.7"
+dbt-bigquery = "~1.8"
 
 [tool.poetry.group.dev.dependencies]
 sqlfluff = "~3.1"
