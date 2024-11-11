@@ -1,13 +1,14 @@
 {% macro convert_grade_level_to_id(grade_level) %}
     case lower({{ grade_level }})
-        when 'infant/toddler'               then -5
-        when 'p2'                           then -4
-        when 'p3'                           then -3
-        when 'p'                            then -2
-        when 'pk'                           then -2
-        when 'preschool/prekindergarten'    then -2
-        when 'tk'                           then -1
-        when 'transitional kindergarten'    then -1
+        when 'infant/toddler'               then -4
+        when 'p2'                           then -3
+        when 'p3'                           then -2
+        when 'pk3'                          then -2
+        when 'p'                            then -1
+        when 'pk'                           then -1
+        when 'pk4'                          then -1
+        when 'preschool/prekindergarten'    then -1
+        when '-1'                           then -1
         when '0'                            then 0
         when 'k'                            then 0
         when 'kk'                           then 0
