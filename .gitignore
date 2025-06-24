@@ -1,3 +1,4 @@
+uv.lock
 ### dbt ###
 target/
 dbt_packages/

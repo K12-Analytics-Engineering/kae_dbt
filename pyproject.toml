@@ -1,22 +1,26 @@
-[tool.poetry]
+[project]
 name = "kae-dbt"
-version = "0.4.9"
+version = "0.5.0"
 description = "KAE utilities for dbt"
-authors = ["Marcos Alcozer <marcos@alcozer.dev>", "Zander Stachniak <zander@alcozer.dev>"]
 readme = "README.md"
+authors = [
+  {name = "Marcos Alcozer", email = "marcos@alcozer.dev"},
+  {name = "Zander Stachniak", email = "zander@alcozer.dev"},
+]
+maintainers = [
+  {name = "K12 Analytics Engineering", email = "team@alcozer.dev"}
+]
+dependencies = [
+    "dbt-core==1.8.2",
+    "dbt-bigquery==1.8.2",
+]
 packages = [{include = "kae_dbt"}]
+requires-python = "~=3.12"
 
-[tool.poetry.dependencies]
-python = "~3.12"
-dbt-core = "1.8.2"
-dbt-bigquery = "1.8.2"
-
-[tool.poetry.group.dev.dependencies]
-sqlfluff = "~3.4"
-sqlfluff-templater-dbt = "~3.4"
-ruff = "~0.11"
-pre-commit = "~4"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "sqlfluff~=3.4",
+    "sqlfluff-templater-dbt~=3.4",
+    "ruff~=0.12",
+    "pre-commit~=4.2",
+]
