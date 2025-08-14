@@ -4,6 +4,7 @@
         when 'p2'                           then -3
         when 'p3'                           then -2
         when 'pk3'                          then -2
+        when '-2'                           then -2
         when 'p'                            then -1
         when 'pk'                           then -1
         when 'pk4'                          then -1
