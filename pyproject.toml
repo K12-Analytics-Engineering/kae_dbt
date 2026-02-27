@@ -1,6 +1,6 @@
 [project]
 name = "kae-dbt"
-version = "0.6.1"
+version = "0.6.2"
 description = "KAE utilities for dbt"
 readme = "README.md"
 authors = [
