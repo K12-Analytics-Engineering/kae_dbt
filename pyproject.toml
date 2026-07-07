@@ -11,11 +11,11 @@ maintainers = [
   {name = "K12 Analytics Engineering", email = "team@alcozer.dev"}
 ]
 dependencies = [
-    "dbt-core==1.8.2",
-    "dbt-bigquery==1.8.2",
+    "dbt-core==1.11.12",
+    "dbt-bigquery==1.11.3",
 ]
 packages = [{include = "kae_dbt"}]
-requires-python = "~=3.12"
+requires-python = "~=3.13.0"
 
 [dependency-groups]
 dev = [
@@ -23,4 +23,15 @@ dev = [
     "sqlfluff-templater-dbt~=3.4",
     "ruff~=0.12",
     "pre-commit~=4.2",
+]
+
+[tool.uv]
+constraint-dependencies = [
+    # dbt-labs family — exact pins, identical fleet-wide (update-dbt-stack skill)
+    "dbt-adapters==1.24.2",
+    "dbt-common==1.38.0",
+    "dbt-semantic-interfaces==0.9.0",
+    "dbt-extractor==0.6.0",
+    "dbt-protos==1.0.514",
+    "metricflow==0.211.0",
 ]
