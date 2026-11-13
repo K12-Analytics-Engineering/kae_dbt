@@ -1,6 +1,0 @@
-packages:
-  - package: dbt-labs/dbt_utils
-    version: 1.3.0
-  - package: dbt-labs/dbt_external_tables
-    version: 0.11.1
-sha1_hash: bd8ad0bda37ed7378702752bc6820d77996328c9
